@@ -1,0 +1,59 @@
+/* FUNDO DO SITE */
+
+body{
+    background-color: #111;
+}
+
+
+/* NOSSA CAIXA */
+
+.caixa{
+
+    width: 150px;
+    height: 150px;
+
+    background-color: cyan;
+
+    /* AQUI FICAM AS ANIMAÇÕES */
+
+    animation:
+    mover 4s linear infinite alternate,
+    cor 2s linear infinite,
+    girar 3s linear infinite;
+}
+
+
+
+/* ANIMAÇÃO DE MOVIMENTO */
+
+@keyframes mover{
+
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(500px);
+    }
+
+}
+
+
+
+/* ANIMAÇÃO DE COR */
+
+@keyframes cor{
+
+    0%{
+        background-color: cyan;
+    }
+
+    50%{
+        background-color: yellow;
+    }
+
+    100%{
+        background-color: magenta;
+    }
+
+}
